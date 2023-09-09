@@ -1,0 +1,21 @@
+.search_bar{
+    margin-right: 30px;
+}
+.search_bar select{
+    margin-left: 10px;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    background-color:lightgray;
+}
+
+.search_id{
+    padding-right: 10px;
+}
+.search_id input{
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    background-color:lightgray;
+    padding-left: 5px;
+}
