@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import styled from 'styled-components'
+
 import "./Header.css"
 const Header = () => {
     const [selectedOption, setSelecedOption] = useState('people');
@@ -15,17 +15,12 @@ const Header = () => {
 
 
 
-    const Form = styled.form`
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-  `
     
 
 
     return (
         <>
-            <Form onSubmit={eventHandler}>
+            <form onSubmit={eventHandler}>
                 <div className="search_bar">
                     <label htmlFor="Search">Search for:</label>
                     <select
@@ -42,12 +37,12 @@ const Header = () => {
                     <input
                         type="number"
                         name="id"
-                        placeholder="Enter Id"
+                       
                         onChange={(e) => { setSeletedId(e.target.value) }} />
 
                 </div>
                 <button>Search</button>
-            </Form>
+            </form>
         </>
     )
 
